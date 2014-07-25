@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+</head>
+<body><center>
+          <div class="modal fade" id="EditModal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 id="ModalTitle" class="modal-title">Modal title</h4>
+                      </div>
+                                 
+                      <div class="modal-body">
+                          <input type="text" id="EditName" placeholder="Name" />
+                          <input type="text" id="EditDescription" placeholder="Description" />
+                          <input type="text" id="EditPicture" placeholder="Picture" />
+                          <input type="hidden" id="EditId" />
+
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" onclick="MyApp.SaveUpdateTurtle();">Save changes</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row clearfix">
+                  <div class="col-md-12 column">
+                      <div class="row clearfix">
+                          <div class="col-md-2 column">
+                              <img alt="140x140" src="http://media-cache-ec0.pinimg.com/avatars/ninjaturtlesfan_1363271861_140.jpg" class="img-circle" />
+                          </div>
+                          <div class="col-md-8 column">
+                              <div class="jumbotron">
+                                  <h1>
+                                      Ninja Turtles!
+                                  </h1>
+                                  <p>
+                                      Teenage Mutant Ninja Turtles
+                                      <div id="tableOutput"></div>
+                                      <input type="text" id="Name" placeholder="Name" />
+                                      <input type="text" id="Description" placeholder="Description" />
+                                      <input type="text" id="Picture" placeholder="Picture" />
+                                      <button class="btn btn-success btn-large" onclick="MyApp.CreateTurtle();">Add Turtle</button>
+
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-md-2 column">
+                              <img alt="140x140" src="http://wastetimepost.com/post_imgs/Realistic-Ninja-Turtles-Characters.jpg" class="img-circle" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+  
+</center>
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/turtles.js"></script>
+</body>
+</html>
